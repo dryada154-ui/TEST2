@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>馬新之旅 | MUJI Travel Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Zen Kaku Gothic New', 'Noto Sans TC', sans-serif;
+            background-color: #F7F7F7; /* 無印淺灰底 */
+            color: #333333;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .muji-card {
+            background: #FFFFFF;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .muji-btn {
+            background-color: #7F7F7F;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .muji-btn:active {
+            background-color: #555555;
+            transform: scale(0.98);
+        }
+        .nav-active {
+            color: #BC3F32; /* 無印紅點綴 */
+            border-top: 2px solid #BC3F32;
+        }
+        /* 隱藏滾動條但保持功能 */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        /* 底部導航陰影 */
+        .bottom-nav {
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="pb-20">
+
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 px-4 py-3 flex justify-between items-center">
+        <div>
+            <h1 class="text-lg font-bold tracking-widest text-gray-800">馬新跨境交流之旅</h1>
+            <p class="text-xs text-gray-500">2026.01.18 - 01.24</p>
+        </div>
+        <div class="text-right">
+            <span id="current-temp" class="text-sm font-medium text-gray-600">30°C 吉隆坡</span>
+        </div>
+    </header>
+
+    <main class="p-4">
+        
+<section id="plan" class="tab-content active space-y-6">
+    <div class="muji-card p-4 border-l-4 border-gray-400">
+        <h3 class="font-bold mb-2"><i class="fas fa-plane-departure mr-2"></i>航班資訊</h3>
+        <div class="grid grid-cols-2 gap-4 text-sm">
+            <div class="bg-gray-50 p-2 rounded">去程: <span class="font-bold text-red-700">BR217</span></div>
+            <div class="bg-gray-50 p-2 rounded">回程: <span class="font-bold text-red-700">BR216</span></div>
+        </div>
+    </div>
+
+    <div class="relative border-l-2 border-gray-200 ml-3 space-y-8 pb-4">
+        
+        <div class="relative pl-6">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 border-4 border-white"></div>
+            <h4 class="font-bold text-gray-800">Day 1 01/18 (日)</h4>
+            <p class="text-sm text-gray-600 mt-1">桃園機場 🛫 吉隆坡機場</p>
+            <div class="mt-2 space-y-2">
+                <div class="bg-white p-3 rounded shadow-sm border border-gray-100 text-sm">
+                    🚌 粉紅清真寺、布城湖、首相府、中央藝術坊、茨廠街、鬼仔巷、REXKL 書店、亞羅街夜市。
+                </div>
+            </div>
+        </div>
+
+        <div class="relative pl-6">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 border-4 border-white"></div>
+            <h4 class="font-bold text-gray-800">Day 2 01/19 (一)</h4>
+            <p class="text-sm text-gray-600 mt-1">巴生交流 & 吉隆坡探索</p>
+            <div class="mt-2 space-y-2 text-sm">
+                <div class="bg-red-50 p-2 text-red-800 rounded font-bold">09:00-13:00 巴生濱華中學交流</div>
+                <div class="bg-white p-3 rounded border border-gray-100">
+                    🚌 皇家雪蘭莪錫博物館(DIY)、雙子星花園廣場、獨立廣場、生命之河。
+                </div>
+            </div>
+        </div>
+
+        <div class="relative pl-6">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 border-4 border-white"></div>
+            <h4 class="font-bold text-gray-800">Day 3 01/20 (二)</h4>
+            <p class="text-sm text-gray-600 mt-1">循人中學交流 & 馬六甲古城</p>
+            <div class="mt-2 space-y-2 text-sm">
+                <div class="bg-red-50 p-2 text-red-800 rounded font-bold">09:00-12:00 吉隆坡循人中學交流</div>
+                <div class="bg-white p-3 rounded border border-gray-100">
+                    🚌 馬六甲遺產探索(紅屋、大鐘樓、基督堂、古城堡、聖保羅教堂、雞場街、三輪車體驗) 🚌 抵達新山。
+                </div>
+            </div>
+        </div>
+
+        <div class="relative pl-6">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 border-4 border-white"></div>
+            <h4 class="font-bold text-gray-800">Day 4 01/21 (三)</h4>
+            <p class="text-sm text-gray-600 mt-1">新山 🚌 前往新加坡</p>
+            <div class="mt-2 space-y-2 text-sm">
+                <div class="bg-white p-3 rounded border border-gray-100">
+                    🎡 聖淘沙環球影城全日遊 🛥️ 克拉碼頭水上計程車體驗。
+                </div>
+            </div>
+        </div>
+
+        <div class="relative pl-6">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 border-4 border-white"></div>
+            <h4 class="font-bold text-gray-800">Day 5 01/22 (四)</h4>
+            <p class="text-sm text-gray-600 mt-1">新加坡深度探索</p>
+            <div class="mt-2 space-y-2 text-sm">
+                <div class="bg-red-50 p-2 text-red-800 rounded font-bold">新加坡國立大學(NUS)參訪</div>
+                <div class="bg-white p-3 rounded border border-gray-100">
+                    🚌 國家美術館、大巴窯建屋發展局、濱海堤壩水資源中心、濱海灣花園(燈光秀)。
+                </div>
+            </div>
+        </div>
+
+        <div class="relative pl-6">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 border-4 border-white"></div>
+            <h4 class="font-bold text-gray-800">Day 6 01/23 (五)</h4>
+            <p class="text-sm text-gray-600 mt-1">諾雅初級學院交流</p>
+            <div class="mt-2 space-y-2 text-sm">
+                <div class="bg-red-50 p-2 text-red-800 rounded font-bold">08:00-18:00 諾雅初級學院全日交流</div>
+                <div class="bg-white p-3 rounded border border-gray-100">
+                    🍽️ 結束後與學伴晚餐 或 前往烏節路自由探索。
+                </div>
+            </div>
+        </div>
+
+        <div class="relative pl-6">
+            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 border-4 border-white"></div>
+            <h4 class="font-bold text-gray-800">Day 7 01/24 (六)</h4>
+            <p class="text-sm text-gray-600 mt-1">新加坡城市探索 🛫 桃園</p>
+            <div class="mt-2 space-y-2 text-sm">
+                <div class="bg-white p-3 rounded border border-gray-100">
+                    🌳 福康寧公園、新加坡國家博物館 🚌 新加坡樟宜機場 🛫 桃園機場 🚌 返回學校。
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="guide" class="tab-content space-y-12 pb-20 px-2">
+    <h2 class="text-2xl font-bold border-b-2 border-gray-800 pb-4 mb-8 tracking-tighter">深度旅遊誌 <span class="text-gray-400 font-light text-sm ml-2">MAGAZINE</span></h2>
+
+    <article class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <span class="bg-gray-800 text-white text-xs px-2 py-1">Day 1: 老城與夜市</span>
+            <div class="h-[1px] bg-gray-200 flex-1"></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1596422846543-75c6fc18a5cf?auto=format&fit=crop&w=800&q=80" alt="KL Street" class="w-full h-48 object-cover rounded shadow-sm">
+        <h3 class="text-xl font-bold text-gray-800">中央藝術坊、茨廠街與鬼仔巷</h3>
+        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            **中央藝術坊 (Central Market)** 是一座建於 1928 年的裝飾藝術風格建築，曾是傳統菜市場，如今轉型為藝術中心，展現馬來西亞多元民族的工藝精華。緊鄰的 **茨廠街 (Petaling Street)** 是吉隆坡的唐人街，濃厚的市井氣息與叫賣聲交織成最生動的街頭風景。而隱藏在附近的 **鬼仔巷 (Kwai Chai Hong)** 則是近年熱門的文創熱點，透過壁畫與復古建築重現了 1960 年代華人聚落的生活點滴。**REXKL 迷宮書店** 則由舊戲院改建，其交錯的木質書架與工業風鋼樑相結合，形成如電影《星際效應》般的空間視覺。夜晚轉向 **亞羅街夜市 (Jalan Alor)**，這裡是吉隆坡的「深夜食堂」，定義了這座城市的熱情與繁華。
+        </p>
+    </article>
+
+    <article class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <span class="bg-gray-800 text-white text-xs px-2 py-1">Day 2: 歷史縮影</span>
+            <div class="h-[1px] bg-gray-200 flex-1"></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1541759451310-72439f0f9757?auto=format&fit=crop&w=800&q=80" alt="Merdeka Square" class="w-full h-48 object-cover rounded shadow-sm">
+        <h3 class="text-xl font-bold text-gray-800">獨立廣場與皇家雪蘭莪</h3>
+        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            **獨立廣場 (Dataran Merdeka)** 是馬來西亞最具象徵意義的地方，1957 年馬來西亞國旗在此升起，宣告脫離英國殖民。廣場周邊環繞著蘇丹阿都沙末大廈，其摩爾式風格的圓頂與鐘樓在藍天下顯得格外莊嚴。而 **皇家雪蘭莪錫博物館** 則展示了馬來西亞昔日的經濟支柱——錫礦產業的輝煌。這家成立於 1885 年的品牌是全球最大的錫鑞公司，參訪時您不僅能見到世界上最大的錫杯，還能在 **錫盤 DIY** 體驗中，親手敲打出一件專屬的紀念品，感受金屬工藝在指尖流動的歷史溫度。
+        </p>
+    </article>
+
+    <article class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <span class="bg-gray-800 text-white text-xs px-2 py-1">Day 3: 古城遺產</span>
+            <div class="h-[1px] bg-gray-200 flex-1"></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1590754228636-40742d4a675f?auto=format&fit=crop&w=800&q=80" alt="Melaka" class="w-full h-48 object-cover rounded shadow-sm">
+        <h3 class="text-xl font-bold text-gray-800">荷蘭紅屋、聖保羅教堂與雞場街</h3>
+        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            馬六甲是馬來西亞歷史的起源。**荷蘭紅屋 (Stadthuys)** 與 **基督堂 (Christ Church)** 構成的紅場，是亞洲最古老的荷蘭建築群，那抹鮮豔的紅色代表了 17 世紀荷蘭人的強勢統治。登上 **聖保羅教堂** 遺址，在古老的石碑與斑駁的城牆間，可以俯瞰整座馬六甲海峽，感受大航海時代的滄桑。下山後抵達 **古城堡 (A'Famosa)**，見證了數百年的權力更迭。最後來到 **雞場街 (Jonker Street)**，這裡曾是古董收藏家的天堂，如今則是峇峇娘惹文化的展示窗口，兩側的百年排屋保留了精美的雕刻藝術，空氣中瀰漫著古早味雞飯粒與涼茶的香氣。
+        </p>
+    </article>
+
+    <article class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <span class="bg-gray-800 text-white text-xs px-2 py-1">Day 4: 獅城熱力</span>
+            <div class="h-[1px] bg-gray-200 flex-1"></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd458ad20?auto=format&fit=crop&w=800&q=80" alt="Clarke Quay" class="w-full h-48 object-cover rounded shadow-sm">
+        <h3 class="text-xl font-bold text-gray-800">環球影城與克拉碼頭</h3>
+        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            **新加坡環球影城 (USS)** 位於聖淘沙島，是東南亞唯一的環球影城主題樂園。無論是科幻城市裡的《變形金剛》4D 戰鬥，還是遙遠王國中的史瑞克城堡，都讓人彷彿走進電影銀幕。結束日間狂歡後，前往 **克拉碼頭 (Clarke Quay)**，這裡原本是新加坡河邊的卸貨倉庫，如今改建為繽紛的餐飲娛樂區。搭乘 **水上計程車 (Water Taxi)**，隨著微風在河面上滑行，穿梭於燈火輝煌的摩天大樓與古老的碼頭建築之間，您可以最優雅的角度觀賞魚尾獅與金沙酒店的絕美夜色。
+        </p>
+    </article>
+
+    <article class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <span class="bg-gray-800 text-white text-xs px-2 py-1">Day 5: 治理與未來</span>
+            <div class="h-[1px] bg-gray-200 flex-1"></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1525625239513-997f71459806?auto=format&fit=crop&w=800&q=80" alt="Gardens by the bay" class="w-full h-48 object-cover rounded shadow-sm">
+        <h3 class="text-xl font-bold text-gray-800">從 NUS 到濱海灣花園</h3>
+        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            **新加坡國立大學 (NUS)** 是亞洲排名第一的頂尖學府。**國家美術館** 由舊最高法院改建，展現建築再生與藝術的對接。接著參訪 **大巴窯建屋發展局 (HDB)** 與 **濱海堤壩水資源中心**，這兩處是理解新加坡「居者有其屋」政策與水資源自給自足奇蹟的最佳窗口。晚間重頭戲是 **濱海灣花園 (Gardens by the Bay)**，其超級樹 (Supertree) 燈光秀透過壯麗的音樂與光影變幻，展現了「花園城市」邁向「城市花園」的野心，音樂聲起時，科技與自然在夜空中達成共鳴。
+        </p>
+    </article>
+
+    <article class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <span class="bg-gray-800 text-white text-xs px-2 py-1">Day 6: 校園與購物</span>
+            <div class="h-[1px] bg-gray-200 flex-1"></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1559599141-383d4371e27d?auto=format&fit=crop&w=800&q=80" alt="Orchard Road" class="w-full h-48 object-cover rounded shadow-sm">
+        <h3 class="text-xl font-bold text-gray-800">諾雅初級學院與烏節路</h3>
+        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            **諾雅初級學院 (Eunoia Junior College)** 全日交流是此次旅行的核心，讓您實地觀察新加坡的高中教育體系，並與當地學伴建立深厚友誼。交流結束後，前往新加坡的時尚中心 **烏節路 (Orchard Road)**。這條全長 2.2 公里的購物大道，兩側林立著設計感十足的商場如 ION Orchard。這裡不僅是購物天堂，更是城市景觀設計的極致體現，隨處可見公共藝術與精緻的街道家具，散步也是一種五感的享受。
+        </p>
+    </article>
+
+    <article class="space-y-4">
+        <div class="flex items-center space-x-2">
+            <span class="bg-gray-800 text-white text-xs px-2 py-1">Day 7: 最後巡禮</span>
+            <div class="h-[1px] bg-gray-200 flex-1"></div>
+        </div>
+        <img src="https://hk.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/mbs_insider/Garden_by_Bay_2_500x375.jpg">
+        <h3 class="text-xl font-bold text-gray-800">新加坡國家博物館</h3>
+        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            造訪 **新加坡國家博物館**。這座建築擁有壯觀的新帕拉第奧式圓頂，內部則結合先進數位科技敘述新加坡從漁村到現代國家的轉型史。透過沈浸式的音效與影像，歷史不再只是枯燥文字。參訪完後帶著滿滿的感觸與回憶，前往 **樟宜機場**，為這趟跨國文化交流之旅畫下完美的句點。
+        </p>
+    </article>
+
+</section>
+
+        <section id="wallet" class="tab-content space-y-4">
+            <div class="muji-card p-4">
+                <h3 class="text-sm font-bold text-gray-500 mb-2 uppercase">匯率計算機 (MYR/SGD to TWD)</h3>
+                <div class="flex items-center space-x-2">
+                    <input type="text" id="calc-input" placeholder="輸入算式, 如 50+20*3" class="w-full bg-gray-50 border-none p-3 rounded text-lg font-mono">
+                    <button onclick="calculate()" class="muji-btn px-6 py-3 rounded font-bold">=</button>
+                </div>
+                <div class="mt-3 flex justify-between items-center text-sm">
+                    <div class="flex items-center space-x-2">
+                        <span>匯率:</span>
+                        <input type="number" id="rate-setting" value="7.5" class="w-16 border-b border-gray-300 bg-transparent text-center focus:outline-none">
+                    </div>
+                    <div class="text-right">
+                        <span class="text-gray-500">台幣估算：</span>
+                        <span id="calc-result" class="text-xl font-bold text-red-700">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="muji-card p-4">
+                <h3 class="font-bold mb-4 flex justify-between items-center">
+                    支出明細 
+                    <button onclick="toggleExpenseForm()" class="text-xs muji-btn px-3 py-1 rounded-full">+ 新增</button>
+                </h3>
+                
+                <div id="expense-form" class="hidden space-y-3 mb-6 bg-gray-50 p-3 rounded">
+                    <input type="text" id="exp-name" placeholder="品項名稱" class="w-full p-2 text-sm border-gray-200 rounded">
+                    <input type="number" id="exp-amount" placeholder="金額" class="w-full p-2 text-sm border-gray-200 rounded">
+                    <div class="flex items-center space-x-2">
+                        <input type="file" id="exp-photo" accept="image/*" capture="camera" class="text-xs">
+                    </div>
+                    <button onclick="saveExpense()" class="w-full py-2 bg-gray-800 text-white rounded text-sm">儲存紀錄</button>
+                </div>
+
+                <div id="expense-list" class="space-y-4 max-h-[400px] overflow-y-auto no-scrollbar">
+                    </div>
+            </div>
+        </section>
+
+        <section id="lists" class="tab-content space-y-6">
+            <div class="muji-card p-4">
+                <h3 class="font-bold mb-4 border-b pb-2">行前準備 CheckList</h3>
+                <div id="checklist" class="space-y-3">
+                    <div class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-gray-600">
+                        <span>📄 護照正本 (含影本)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-gray-600">
+                        <span>📱 行動電源 & 充電線</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-gray-600">
+                        <span>💊 常備藥 (暈車、腸胃)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="muji-card p-4">
+                <h3 class="font-bold mb-4 border-b pb-2">個人備忘錄</h3>
+                <textarea id="memo-input" rows="4" class="w-full p-3 bg-gray-50 border-none rounded text-sm focus:ring-1 focus:ring-gray-300" placeholder="貼上網址或隨手筆記..."></textarea>
+                <div id="memo-links" class="mt-3 flex flex-wrap gap-2"></div>
+            </div>
+        </section>
+
+        <section id="info" class="tab-content space-y-4">
+            <div class="muji-card p-4">
+                <h3 class="font-bold mb-2">🆘 緊急聯絡</h3>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between border-b py-1"><span>馬來西亞報案/救護車</span> <span>999</span></div>
+                    <div class="flex justify-between border-b py-1"><span>新加坡報案</span> <span>999</span></div>
+                    <div class="flex justify-between border-b py-1"><span>新加坡救護車</span> <span>995</span></div>
+                    <div class="flex justify-between py-1 text-red-700"><span>駐馬代表處緊急電話</span> <span>+60 12-212-3022</span></div>
+                </div>
+            </div>
+
+            <div class="muji-card p-4">
+                <h3 class="font-bold mb-2">💡 注意事項</h3>
+                <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+                    <li>禁止攜帶口香糖進入新加坡。</li>
+                    <li>進入清真寺需穿長褲/長裙，女性需包頭巾。</li>
+                    <li>馬星兩國皆為右駕，過馬路請先看右再看左。</li>
+                    <li>電子煙在新加坡是違法的，請勿攜帶。</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around items-center h-16 bottom-nav">
+        <button onclick="switchTab('plan')" class="nav-btn nav-active flex flex-col items-center flex-1 py-2">
+            <i class="fas fa-calendar-day text-lg"></i>
+            <span class="text-[10px] mt-1 uppercase tracking-tighter">Plan</span>
+        </button>
+        <button onclick="switchTab('guide')" class="nav-btn text-gray-400 flex flex-col items-center flex-1 py-2">
+            <i class="fas fa-book-open text-lg"></i>
+            <span class="text-[10px] mt-1 uppercase tracking-tighter">Guide</span>
+        </button>
+        <button onclick="switchTab('wallet')" class="nav-btn text-gray-400 flex flex-col items-center flex-1 py-2">
+            <i class="fas fa-wallet text-lg"></i>
+            <span class="text-[10px] mt-1 uppercase tracking-tighter">Wallet</span>
+        </button>
+        <button onclick="switchTab('lists')" class="nav-btn text-gray-400 flex flex-col items-center flex-1 py-2">
+            <i class="fas fa-check-square text-lg"></i>
+            <span class="text-[10px] mt-1 uppercase tracking-tighter">Lists</span>
+        </button>
+        <button onclick="switchTab('info')" class="nav-btn text-gray-400 flex flex-col items-center flex-1 py-2">
+            <i class="fas fa-info-circle text-lg"></i>
+            <span class="text-[10px] mt-1 uppercase tracking-tighter">Info</span>
+        </button>
+    </nav>
+
+    <script>
+        // Tab Switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('nav-active', 'text-gray-400');
+                btn.classList.add('text-gray-400');
+            });
+            event.currentTarget.classList.add('nav-active');
+            event.currentTarget.classList.remove('text-gray-400');
+            window.scrollTo(0, 0);
+        }
+
+        // Wallet Logic
+        let expenses = JSON.parse(localStorage.getItem('travel_expenses')) || [];
+
+        function calculate() {
+            const input = document.getElementById('calc-input').value;
+            const rate = parseFloat(document.getElementById('rate-setting').value);
+            try {
+                // 安全評估簡單算式
+                const total = Function('"use strict";return (' + input + ')')();
+                document.getElementById('calc-input').value = total;
+                document.getElementById('calc-result').innerText = Math.round(total * rate);
+            } catch (e) {
+                alert('算式錯誤');
+            }
+        }
+
+        function toggleExpenseForm() {
+            const form = document.getElementById('expense-form');
+            form.classList.toggle('hidden');
+        }
+
+        async function saveExpense() {
+            const name = document.getElementById('exp-name').value;
+            const amount = document.getElementById('exp-amount').value;
+            const photoFile = document.getElementById('exp-photo').files[0];
+            const rate = parseFloat(document.getElementById('rate-setting').value);
+
+            if (!name || !amount) return alert('請填寫品項與金額');
+
+            let photoBase64 = '';
+            if (photoFile) {
+                photoBase64 = await compressImage(photoFile);
+            }
+
+            const item = {
+                id: Date.now(),
+                name,
+                amount,
+                twd: Math.round(amount * rate),
+                photo: photoBase64,
+                date: new Date().toLocaleTimeString()
+            };
+
+            expenses.unshift(item);
+            localStorage.setItem('travel_expenses', JSON.stringify(expenses));
+            renderExpenses();
+            toggleExpenseForm();
+            // Reset form
+            document.getElementById('exp-name').value = '';
+            document.getElementById('exp-amount').value = '';
+            document.getElementById('exp-photo').value = '';
+        }
+
+        function compressImage(file) {
+            return new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = (event) => {
+                    const img = new Image();
+                    img.src = event.target.result;
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        const MAX_WIDTH = 200;
+                        const scale = MAX_WIDTH / img.width;
+                        canvas.width = MAX_WIDTH;
+                        canvas.height = img.height * scale;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                        resolve(canvas.toDataURL('image/jpeg', 0.7));
+                    };
+                };
+            });
+        }
+
+        function renderExpenses() {
+            const container = document.getElementById('expense-list');
+            container.innerHTML = expenses.map(exp => `
+                <div class="flex items-center space-x-3 border-b border-gray-100 pb-3">
+                    ${exp.photo ? `<img src="${exp.photo}" class="w-12 h-12 object-cover rounded">` : `<div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center text-gray-300 text-xs">No Pix</div>`}
+                    <div class="flex-1">
+                        <div class="text-sm font-bold">${exp.name}</div>
+                        <div class="text-xs text-gray-400">${exp.date}</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold">${exp.amount} <span class="text-[10px] text-gray-400">MYR</span></div>
+                        <div class="text-xs text-red-700">≈ ${exp.twd} TWD</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Memo Logic
+        const memoInput = document.getElementById('memo-input');
+        memoInput.addEventListener('input', () => {
+            const text = memoInput.value;
+            localStorage.setItem('travel_memo', text);
+            detectLinks(text);
+        });
+
+        function detectLinks(text) {
+            const urlRegex = /(https?:\/\/[^\s]+)/g;
+            const links = text.match(urlRegex) || [];
+            const container = document.getElementById('memo-links');
+            container.innerHTML = links.map(url => `
+                <a href="${url}" target="_blank" class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs flex items-center">
+                    <i class="fas fa-link mr-1"></i> 點擊連結
+                </a>
+            `).join('');
+        }
+
+        // Initial Load
+        window.onload = () => {
+            renderExpenses();
+            const savedMemo = localStorage.getItem('travel_memo') || '';
+            memoInput.value = savedMemo;
+            detectLinks(savedMemo);
+        };
+    </script>
+</body>
+</html>
